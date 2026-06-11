@@ -3,15 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta name="description" content="Oxford Online English Academy by Sir Hassan Jatoi. Learn English with confidence through our comprehensive online courses. Admissions Open!">
-    <meta name="keywords" content="English Academy, Online English Course, Sir Hassan Jatoi, English Grammar, Spoken English, Admissions Open">
-    <title>Oxford English Academy | Online English Courses by Sir Hassan Jatoi</title>
+    <title>Oxford English Academy | Sir Hassan Jatoi</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Poppins', sans-serif; -webkit-tap-highlight-color: transparent; }
-        /* Ensure inputs don't trigger zoom on iOS */
-        input, button { font-size: 16px !important; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900">
@@ -38,74 +34,111 @@
         </div>
     </section>
 
-    <section class="max-w-4xl mx-auto px-4 py-12">
-        <h2 class="text-2xl font-bold mb-6 text-center">Academy Moments</h2>
-        <div class="grid grid-cols-2 gap-3">
-            <img src="https://i.ibb.co/7JN5mcPF/emotional-multiethnic-students-guys-and-young-ladies-in-graduation-costumes-raising-diplomas-up-and.jpg" alt="Gallery" class="rounded-xl shadow-md w-full h-32 object-cover" />
-            <img src="https://i.ibb.co/gbLnT11z/Shorelight-Associate-Degree.webp" alt="Gallery" class="rounded-xl shadow-md w-full h-32 object-cover" />
-            <img src="https://i.ibb.co/XZH5X6sw/istockphoto-480952865-612x612.jpg" alt="Gallery" class="col-span-2 rounded-xl shadow-md w-full h-32 object-cover" />
-        </div>
-    </section>
-
-    <section class="max-w-6xl mx-auto px-4 py-8">
-        <h2 class="text-2xl font-bold mb-8 text-center">Course Curriculum</h2>
-        <div id="course-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    <section class="max-w-6xl mx-auto px-4 py-12">
+        <h2 class="text-2xl font-bold mb-8 text-center">Available Courses</h2>
+        <div id="courses-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16"></div>
+        
+        <h2 class="text-2xl font-bold mb-8 text-center">Digital Books & Materials</h2>
+        <div id="books-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
     </section>
 
     <section id="enroll" class="max-w-4xl mx-auto px-4 py-12">
         <div class="bg-gray-900 text-white rounded-3xl p-6 md:p-10 shadow-2xl">
-            <h2 class="text-2xl font-bold mb-2">Registration Form</h2>
-            <p class="text-gray-400 text-sm mb-6">Fill the form to get started</p>
+            <h2 class="text-2xl font-bold mb-2">Student Registration</h2>
+            <p class="text-gray-400 mb-6 text-sm">Course Fee: <span class="text-yellow-500 font-bold">800 PKR / Month</span></p>
             <form id="regForm" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <input name="name" placeholder="Full Name" required class="w-full p-4 rounded-xl text-gray-900 outline-none" />
-                <input name="fatherName" placeholder="Father's Name" required class="w-full p-4 rounded-xl text-gray-900 outline-none" />
-                <input name="whatsappNumber" type="tel" placeholder="WhatsApp Number" required class="w-full p-4 rounded-xl text-gray-900 outline-none" />
-                <input name="city" placeholder="City" required class="w-full p-4 rounded-xl text-gray-900 outline-none" />
-                <input name="district" placeholder="District" required class="w-full p-4 rounded-xl text-gray-900 outline-none" />
-                <input name="lastDegree" placeholder="Last Degree" required class="w-full p-4 rounded-xl text-gray-900 outline-none" />
-                <input type="date" name="dob" required class="w-full p-4 rounded-xl text-gray-900 outline-none" />
-                <button type="submit" class="md:col-span-2 w-full bg-yellow-600 py-4 rounded-xl font-bold text-white text-lg hover:bg-yellow-500 transition active:scale-95">Register Now</button>
+                <input name="name" placeholder="Full Name" required class="w-full p-3 rounded-xl text-gray-900" />
+                <input name="fatherName" placeholder="Father's Name" required class="w-full p-3 rounded-xl text-gray-900" />
+                <input name="dob" type="date" placeholder="Date of Birth" required class="w-full p-3 rounded-xl text-gray-900" />
+                <input name="cnic" placeholder="CNIC / B-Form Number" required class="w-full p-3 rounded-xl text-gray-900" />
+                <input name="whatsapp" type="tel" placeholder="WhatsApp Number" required class="w-full p-3 rounded-xl text-gray-900" />
+                <input name="city" placeholder="City" required class="w-full p-3 rounded-xl text-gray-900" />
+                <input name="district" placeholder="District" required class="w-full p-3 rounded-xl text-gray-900" />
+                <input name="lastCollege" placeholder="Last College Name" required class="w-full p-3 rounded-xl text-gray-900" />
+                <input name="lastDegree" placeholder="Last Degree Obtained" required class="md:col-span-2 w-full p-3 rounded-xl text-gray-900" />
+                <button type="submit" class="md:col-span-2 w-full bg-yellow-600 py-4 rounded-xl font-bold text-white text-lg hover:bg-yellow-500 transition">Submit Registration</button>
             </form>
         </div>
     </section>
-    
-    <footer class="bg-gray-100 border-t border-gray-200 py-12">
+
+    <footer class="bg-white border-t border-gray-100 py-12 mt-12">
         <div class="max-w-4xl mx-auto px-6 text-center">
             <h3 class="text-xl font-bold mb-6">Connect With Us</h3>
-            <div class="flex flex-col gap-3">
-                <a href="https://wa.me/923083500829" target="_blank" class="w-full bg-[#25D366] text-white py-4 rounded-xl font-bold hover:bg-[#20bd5a] transition">WhatsApp Us</a>
-                <a href="https://www.facebook.com/profile.php?id=61590438282609" target="_blank" class="w-full bg-[#1877F2] text-white py-4 rounded-xl font-bold hover:bg-[#166fe5] transition">Facebook</a>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                <a href="https://wa.me/923083500829" target="_blank" class="bg-[#25D366] text-white py-4 rounded-xl font-bold hover:opacity-90 transition">WhatsApp Us</a>
+                <a href="https://www.facebook.com/profile.php?id=61590438282609" target="_blank" class="bg-[#1877F2] text-white py-4 rounded-xl font-bold hover:opacity-90 transition">Facebook Page</a>
             </div>
-            <p class="text-gray-500 text-xs mt-8">"Learn English Today, Lead Tomorrow."</p>
-            <p class="text-gray-400 text-xs mt-2">&copy; 2026 Oxford English Academy.</p>
+            <p class="text-gray-400 text-sm">&copy; 2026 Oxford English Academy. All rights reserved.</p>
         </div>
     </footer>
 
+    <div id="paymentModal" class="fixed inset-0 bg-black/60 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl p-6 w-full max-w-sm shadow-2xl">
+            <h3 class="text-xl font-bold mb-1">Payment Required</h3>
+            <p class="text-gray-500 text-sm mb-6">Book Price: <span class="font-bold text-yellow-600">400 PKR</span></p>
+            <div class="bg-gray-100 p-4 rounded-xl mb-6 text-center">
+                <p class="text-xs text-gray-500 mb-1">JazzCash Number:</p>
+                <p class="text-xl font-bold tracking-widest text-gray-900">03083500829</p>
+            </div>
+            <input id="tidInput" type="text" placeholder="Enter Transaction ID (TID)" class="w-full p-3 border rounded-xl mb-4 text-center outline-none" />
+            <button onclick="verifyPayment()" class="w-full bg-yellow-600 text-white py-3 rounded-xl font-bold mb-3">Verify & Unlock</button>
+            <button onclick="closeModal()" class="w-full text-gray-500 text-sm">Cancel</button>
+        </div>
+    </div>
+
     <script>
+        // ADD NEW COURSES HERE:
         const courses = [
-            { title: "Foundation", items: ["Alphabet & Sounds", "Basic Grammar"] },
-            { title: "Grammar Mastery", items: ["All 12 Tenses", "Active/Passive Voice"] },
-            { title: "Speaking Skills", items: ["Daily Conversations", "Self Introduction"] },
-            { title: "Writing Skills", items: ["Paragraphs & Essays", "Letters & Emails"] },
-            { title: "Vocabulary", items: ["Synonyms & Antonyms", "Phrasal Verbs"] },
-            { title: "Advanced English", items: ["Idioms & Proverbs", "Public Speaking"] }
+            { title: "English Grammar", desc: "Complete 12 Tenses" },
+            { title: "Spoken English", desc: "Fluent Communication" },
+            { title: "Writing Skills", desc: "Essays & Letters" }
         ];
 
-        const grid = document.getElementById('course-grid');
+        // ADD NEW BOOKS HERE:
+        const books = [
+            { title: "English Grammar Guide", price: 400 },
+            { title: "Spoken Vocabulary Book", price: 400 }
+        ];
+
+        // RENDER COURSES
+        const courseGrid = document.getElementById('courses-grid');
         courses.forEach(c => {
-            grid.innerHTML += `<div class="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm">
-                <h3 class="font-bold text-yellow-600 mb-2">${c.title}</h3>
-                <ul class="space-y-1 text-sm text-gray-600">
-                    ${c.items.map(i => `<li class="flex items-center">✅ ${i}</li>`).join('')}
-                </ul>
-            </div>`;
+            courseGrid.innerHTML += `
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 class="font-bold text-lg mb-1">${c.title}</h3>
+                    <p class="text-gray-500 text-sm">${c.desc}</p>
+                </div>
+            `;
         });
+
+        // RENDER BOOKS
+        const bookGrid = document.getElementById('books-grid');
+        books.forEach(b => {
+            bookGrid.innerHTML += `
+                <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 text-center">
+                    <h3 class="font-bold text-lg mb-2">${b.title}</h3>
+                    <p class="text-yellow-600 font-bold mb-4">${b.price} PKR</p>
+                    <button onclick="openModal('${b.title}')" class="w-full bg-gray-900 text-white py-3 rounded-xl font-bold hover:bg-yellow-600 transition">Purchase PDF</button>
+                </div>
+            `;
+        });
+
+        function openModal() { document.getElementById('paymentModal').classList.remove('hidden'); }
+        function closeModal() { document.getElementById('paymentModal').classList.add('hidden'); }
+        
+        function verifyPayment() {
+            const tid = document.getElementById('tidInput').value;
+            if(tid.length > 5) {
+                window.open(`https://wa.me/923083500829?text=I have paid 400 PKR. TID: ${tid}`, '_blank');
+                closeModal();
+            } else { alert("Please enter a valid TID."); }
+        }
 
         document.getElementById('regForm').onsubmit = (e) => {
             e.preventDefault();
             const f = e.target;
-            const msg = `*NEW STUDENT REGISTRATION*\nName: ${f.name.value}\nFather: ${f.fatherName.value}\nWhatsApp: ${f.whatsappNumber.value}\nCity: ${f.city.value}\nDistrict: ${f.district.value}\nLast Degree: ${f.lastDegree.value}\nDOB: ${f.dob.value}`;
-            window.open(`https://wa.me/923083500829?text=${encodeURIComponent(msg)}`, '_blank');
+            const msg = `*NEW COURSE REGISTRATION (800 PKR)*%0AName: ${f.name.value}%0AFather: ${f.fatherName.value}%0ADOB: ${f.dob.value}%0ACNIC: ${f.cnic.value}%0AWhatsApp: ${f.whatsapp.value}%0ACity: ${f.city.value}%0ADistrict: ${f.district.value}%0ALast College: ${f.lastCollege.value}%0ALast Degree: ${f.lastDegree.value}`;
+            window.open(`https://wa.me/923083500829?text=${msg}`, '_blank');
         };
     </script>
 </body>
